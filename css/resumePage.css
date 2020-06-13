@@ -1,0 +1,181 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background-color: white;
+}
+
+.logo img
+{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+
+.background
+{
+	background-size: 35%;
+	background-color: black;
+	background-repeat: no-repeat;
+	height: 4.5vh;
+	background: cover;
+	background-position: center;
+}
+
+
+.parallax1{
+  position: relative;
+  opacity: 1;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+
+.parallax1{
+	background-image: url("../img/resumeDiv.jpg");
+	background-position: center top;
+	min-height: 300px;
+	background-size: cover;
+}
+
+.container
+{
+	text-align: center;
+	float: center;
+	list-style: none;
+	margin-top: 0px;
+}
+
+.container li
+{
+	display: inline-block;
+}
+
+.container li a
+{
+
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+
+}
+
+.container li a.animate::after
+{
+	content: '';
+	display: block;
+	width: 0;
+	height: 5px;
+	background: white;
+	-webkit-transition: width .3s;
+}
+
+.container li a.animate:hover::after
+{
+	width: 100%;
+	-webkit-transition: width .3s;
+}
+
+.contentinfo{
+	margin: 0 auto;
+	position:center;
+	background-color:transparent;
+	background-position:center;
+	width: 600px;
+	text-align:center;
+	font-family: "Roboto", sans-serif;
+
+}
+
+#content p
+{
+	text-align: center;
+	color: black;
+	font-family: "Times New Roman", serif;
+	font-size: 50px;
+	background-color: transparent;
+}
+
+.ryzen
+{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -999;
+}
+
+.myResume
+{
+	text-align: center;
+}
+
+.resumeBtn
+{
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.resumeBtn:hover
+{
+  background-color: #4CAF50;
+  color: white;
+}
+
+.carousel-control-prev
+{
+	color: red;
+}
+
+.resumeWritten
+{
+	margin: auto;
+	position:center;
+	background-color:transparent;
+	background-position:center;
+	max-width: 600px;
+	text-align:center;
+	font-family: "Roboto", sans-serif;
+}
+
+.resumeWritten li
+{
+	display: list-item;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.carousel-item {
+  transition-duration: 2s;
+}
+
+.carousel-item{
+    height: 500px;
+}
+.carousel-item img{
+    height: 500px;
+}
+
+@media only screen and (max-width: 640px) {
+	#content p
+	{
+		font-size:10vw;
+	}
+}

@@ -1,0 +1,5 @@
+@media print{
+  .Projects , .myResume, #carouselExampleIndicators, .projects, .background, .myResume{
+    display: none !important;
+  }
+}
